@@ -16,9 +16,10 @@ android {
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
-
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        // Define the ACCESS_TOKEN for BuildConfig
+        buildConfigField("String", "ACCESS_TOKEN", "\"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\"")
     }
 
     buildTypes {
@@ -38,7 +39,7 @@ android {
         jvmTarget = "1.8"
     }
     buildFeatures {
-        viewBinding=true
+        viewBinding = true
     }
 }
 
